@@ -4,7 +4,7 @@ module DPH.Pipeline
 where
 import DPH.Pass.Summon
 import DPH.Pass.Dump
-import GhcPlugins
+import GHC.Plugin
 
 -- DPH Compilation phase numbers. 
 -- These are defined in dph-base:include/fusion-phases.h
@@ -17,7 +17,7 @@ dphPhaseInner           = 0
 
 -- | Our vectoriser pipeline.
 --   This replaces the standard compilation pipeline defined in 
---   SimplCore.lhs of the main compiler.
+--   GHC.IR.Core.Transformer.Pipeline of the main compiler.
 vectoriserPipeline :: [CoreToDo]
 vectoriserPipeline
  = [    

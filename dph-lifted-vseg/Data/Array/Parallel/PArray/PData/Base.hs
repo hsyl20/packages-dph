@@ -16,7 +16,7 @@ module Data.Array.Parallel.PArray.PData.Base
 where
 import Data.Array.Parallel.Pretty
 import GHC.Exts
-import SpecConstr                               ()
+import GHC.IR.Core.Transformer.Specialiser.Constructor ()
 import Data.Vector                              (Vector)
 import Data.Array.Parallel.Base                 (Tag)
 import qualified Data.Array.Parallel.Unlifted   as U

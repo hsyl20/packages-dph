@@ -15,14 +15,14 @@ module DPH.Pass.Summon
         (passSummon)
 where
 import DPH.Core.Pretty
-import HscTypes
-import CoreSyn
-import CoreMonad
-import Avail
+import GHC.Types
+import GHC.IR.Core.Syntax
+import GHC.IR.Core.Pipeline
+import GHC.Entity.Available
 import Data.Maybe
 import Data.Set                 (Set)
-import qualified UniqDFM        as UDFM
-import qualified Data.Set       as Set
+import qualified GHC.Entity.Unique.DeterFiniteMap as UDFM
+import qualified Data.Set                         as Set
 import Control.Monad
 import Debug.Trace
 

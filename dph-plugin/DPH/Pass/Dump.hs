@@ -3,8 +3,8 @@ module DPH.Pass.Dump
         (passDump)
 where
 import DPH.Core.Pretty
-import HscTypes
-import CoreMonad
+import GHC.Types
+import GHC.IR.Core.Pipeline
 import System.IO.Unsafe
 
 -- | Dump a module.

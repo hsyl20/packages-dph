@@ -332,7 +332,7 @@ infix  4  `elemP`, `notElemP`
 -- internal representation used for standard Haskell arrays in GHC's Prelude
 -- (EXPORTED ABSTRACTLY)
 --
--- * This definition *must* be kept in sync with `TysWiredIn.parrTyCon'!
+-- * This definition *must* be kept in sync with `GHC.Builtin.Types.parrTyCon'!
 --
 data [::] e = PArr Int# (Array# e)
 

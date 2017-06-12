@@ -5,19 +5,19 @@ module DPH.Core.Pretty
         , pprTopBinds)
 where
 import DPH.Base.Pretty
-import HscTypes
-import Avail
-import CoreSyn
-import Type
-import Coercion
-import Var
-import Name
-import OccName
-import DataCon
-import Literal
-import Id
-import Unique
-import qualified UniqDFM as UDFM
+import GHC.Types
+import GHC.Entity.Available
+import GHC.IR.Core.Syntax
+import GHC.Entity.Type
+import GHC.Entity.Coercion
+import GHC.Entity.Var
+import GHC.Entity.Name
+import GHC.Entity.OccName
+import GHC.Entity.DataConstructor
+import GHC.Entity.Literal
+import GHC.Entity.Id
+import GHC.Entity.Unique
+import qualified GHC.Entity.Unique.DeterFiniteMap as UDFM
 
 -- Guts -----------------------------------------------------------------------
 pprModGuts :: ModGuts -> Doc

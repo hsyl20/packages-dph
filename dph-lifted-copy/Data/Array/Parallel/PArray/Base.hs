@@ -38,7 +38,7 @@ import Data.Array.Parallel.PArray.PRepr
 import Data.Array.Parallel.Base           (Tag)
 import qualified Data.Array.Parallel.Unlifted as U
 import GHC.Exts (Int#, Int(..), (+#), (*#))
-import SpecConstr
+import GHC.IR.Core.Transformer.Specialiser.Constructor
 
 
 -- | Lifted\/bulk parallel arrays

@@ -25,7 +25,7 @@ where
 import qualified Data.Array.Parallel.Unlifted   as U
 import Data.Array.Parallel.Base                 (Tag)
 import GHC.Exts                                 (Int#)
-import SpecConstr
+import GHC.IR.Core.Transformer.Specialiser.Constructor
 
 
 -- | Parallel Data.

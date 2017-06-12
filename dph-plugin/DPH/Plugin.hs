@@ -2,8 +2,8 @@
 
 module DPH.Plugin where
 import DPH.Pipeline
-import GhcPlugins
-import StaticFlags
+import GHC.Plugin
+import GHC.Config.Flags
 import Debug.Trace
 import System.IO.Unsafe
 
